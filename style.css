@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Pixelify Sans', system-ui;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 45px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  box-sizing: border-box;
+  z-index: 1000;
+  -webkit-app-region: drag;
+}
+
+.drag-region {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #789dbc;
+  flex-grow: 1;
+}
+
+.window-controls {
+  margin-left: 130px;
+  flex-grow: 1;
+  display: flex;
+  -webkit-app-region: drag;
+}
+
+.window-controls button {
+  background: transparent;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+
+.window-controls img {
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(1px 1px #ffc2d1);
+}
+
+.cover-image {
+  display: none;
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-top: 40px;
+  margin-bottom: -5px;
+  border-radius: 6px;
+}
+
+.img-button {
+  background: none;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.img-button img {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.2s;
+}
+
+.img-button img:hover {
+  transform: scale(1.1);
+}
+
+.player-container {
+  padding: 20px;
+  width: 300px;
+}
+
+.pixel-frame {
+  padding: 10px;
+  background: transparent;
+}
+
+.screen {
+  text-align: center;
+}
+
+.song-title {
+  font-size: 16px;
+  color: #d080aa;
+  margin-bottom: 10px;
+}
+
+.progress-bar-container {
+  margin-top: 10px;
+  height: 10px;
+  border: 2px solid thistle;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #d080aa;
+  width: 0%;
+}
