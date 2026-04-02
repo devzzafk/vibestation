@@ -1,0 +1,27 @@
+{
+  "name": "bleepy",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "virtual music player",
+    "pixel art",
+    "desktop app"
+  ],
+  "author": "itsbeuina",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.itsbeuina.bleepy",
+    "productName": "Bleepy",
+    "mac": {
+      "icon": "logo.icns"
+    }
+  }
+}
